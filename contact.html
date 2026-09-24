@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تواصل مع مطعم أورا — هاتف، واتساب، عنوان، وأوقات العمل. نحن هنا لخدمتك 24/7." />
+  <meta name="theme-color" content="#7B1E1E" />
+  <title>اتصل بنا | أورا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aura-pages.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🍽️</span>
+        <span class="logo-text">أورا</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html">القائمة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="gallery.html">معرض الصور</a></li>
+        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-cart" id="cart-btn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-label">تواصل معنا</span>
+      <h1 class="page-hero-title">اتصل بنا</h1>
+      <p class="page-hero-subtitle">فريقنا جاهز لخدمتك على مدار الساعة — لا تتردد بالتواصل</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-form-box">
+          <h2>أرسل لنا رسالة</h2>
+          <p>سنجيبك في أقرب وقت ممكن</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" name="name" placeholder="أدخل اسمك" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">الموضوع</label>
+              <select id="subject" name="subject">
+                <option value="general">استفسار عام</option>
+                <option value="order">طلب جديد</option>
+                <option value="reservation">حجز طاولة</option>
+                <option value="complaint">شكوى</option>
+                <option value="suggestion">اقتراح</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i>
+              إرسال الرسالة
+            </button>
+          </form>
+        </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>عندك مناسبة خاصة؟</h2>
+      <p>نوفر خدمة تجهيز المناسبات والحفلات — تواصل معنا لمعرفة التفاصيل</p>
+      <a href="tel:07863370728" class="btn-accent">
+        <i class="fas fa-phone"></i>
+        اتصل بنا الآن
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">🍽️ أورا</div>
+        <p>نقدم لكم أشهى الأطباق الشرقية والغربية بأجود المكونات وأيدي طهاة محترفين.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html">القائمة</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="gallery.html">معرض الصور</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#">توصيل للمنازل</a></li>
+          <li><a href="#">حجز طاولات</a></li>
+          <li><a href="#">طلبات المناسبات</a></li>
+          <li><a href="#">تغليف خاص</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>تواصل معنا</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-location-dot"></i>بابل - علامة بابيلون</li>
+          <li><i class="fas fa-phone"></i> 07863370728</li>
+          <li><i class="fas fa-envelope"></i>prg.mohamed.dev@gmail.com</li>
+          <li><i class="fas fa-clock"></i> 24/7</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع حقوق النشر محفوظة باسم أورا</p>
+    </div>
+  </footer>
+
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> سلة الطلبات</h3>
+      <button class="cart-close" id="cart-close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-basket"></i>
+        <p>سلة الطلبات فارغة</p>
+        <span>أضف أطباقك المفضلة</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>المجموع</span>
+        <strong id="cart-total">0 د.ع</strong>
+      </div>
+      <button class="btn-primary btn-block" id="checkout-btn">
+        <i class="fas fa-check"></i> إتمام الطلب
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // معالج نموذج التواصل
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name  !email  !message) {
+          alert('يرجى ملء الحقول المطلوبة');
+          return;
+        }
+
+        alert('شكراً ' + name + '! تم استلام رسالتك وسنتواصل معك قريباً.');
+        contactForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>

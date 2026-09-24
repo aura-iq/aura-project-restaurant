@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="أورا — مطعم يقدم ألذ الأطباق الشرقية والغربية. اطلب أونلاين أو احجز طاولتك الآن." />
+  <meta name="theme-color" content="#7B1E1E" />
+  <title>أورا | مطعم فاخر — اطلب الآن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aura-pages.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🍽️</span>
+        <span class="logo-text">أورا</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">الرئيسية</a></li>
+        <li><a href="menu.html">القائمة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="gallery.html">معرض الصور</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-cart" id="cart-btn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          التوصيل مجاني على أول طلب
+        </div>
+        <h1 class="hero-title">
+          اطلب <span class="highlight">ألذ الأطباق</span> ويوصلك لحد باب البيت
+        </h1>
+        <p class="hero-subtitle">
+          استمتع بتجربة طعام استثنائية من مطعم أورا — أطباق طازجة، توصيل سريع، وخدمة راقية.
+        </p>
+
+        <!-- شريط البحث عن العنوان (مثل DoorDash) -->
+        <div class="delivery-search">
+          <i class="fas fa-location-dot search-icon"></i>
+          <input type="text" placeholder="أدخل عنوان التوصيل..." class="search-input" id="delivery-input" />
+          <button class="search-btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>30<span>د</span></strong>
+            <span>متوسط التوصيل</span>
+          </div>
+          <div class="hero-stat">
+            <strong>4.9<span>★</span></strong>
+            <span>تقييم العملاء</span>
+          </div>
+          <div class="hero-stat">
+            <strong>25<span>+</span></strong>
+            <span>طبق مميز</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=900&fit=crop" alt="طبق مميز" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">لماذا أورا؟</span>
+        <h2 class="section-title">تجربة طعام <span class="highlight">لا تُنسى</span></h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+          <h3>توصيل سريع</h3>
+          <p>طلبك يصلك خلال 30 دقيقة أو أقل، طازجاً وساخناً.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+          <h3>مكونات طازجة</h3>
+          <p>نختار مكوناتنا يومياً من أفضل المصادر المحلية.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-award"></i></div>
+          <h3>جودة مضمونة</h3>
+          <p>أطباقنا من إعداد طهاة محترفين بخبرة سنوات.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3>خدمة راقية</h3>
+          <p>فريق دعم جاهز لخدمتك على مدار الساعة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Dishes -->
+  <section class="dishes-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">الأكثر طلباً</span>
+        <h2 class="section-title">أطباقنا <span class="highlight">المميزة</span></h2>
+      </div>
+
+      <div class="dishes-grid">
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop" alt="بيتزا مارغريتا" />
+            <span class="dish-badge">الأكثر طلباً</span>
+          </div>
+          <div class="dish-info">
+            <h3>بيتزا مارغريتا</h3>
+            <p>عجينة رقيقة، جبن موزاريلا، وصوص طماطم إيطالي</p>
+            <div class="dish-footer">
+              <span class="dish-price">5,000 د.ع</span>
+              <button class="dish-add" data-dish="بيتزا مارغريتا" data-price="5000">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="برغر لحم" />
+          </div>
+          <div class="dish-info">
+            <h3>برغر لحم مشوي</h3>
+            <p>لحم بقري طازج، جبن شيدر، وخضروات مقرمشة</p>
+            <div class="dish-footer">
+              <span class="dish-price">4,000 د.ع</span>
+              <button class="dish-add" data-dish="برغر لحم مشوي" data-price="4000">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="مشاوي مشكلة" />
+          </div>
+          <div class="dish-info">
+            <h3>مشاوي مشكلة</h3>
+            <p>تشكيلة كباب، تكا، وريش مع أرز بسمتي</p>
+            <div class="dish-footer">
+              <span class="dish-price">15,000 د.ع</span>
+              <button class="dish-add" data-dish="مشاوي مشكلة" data-price="15000">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="سلطة سيزر" />
+          </div>
+          <div class="dish-info">
+            <h3>سلطة سيزر</h3>
+            <p>خس روماني، دجاج مشوي، وصوص سيزر خاص</p>
+            <div class="dish-footer">
+              <span class="dish-price">4,500 د.ع</span>
+              <button class="dish-add" data-dish="سلطة سيزر" data-price="4500">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dishes-more">
+        <a href="menu.html" class="btn-outline">
+          عرض القائمة الكاملة <i class="fas fa-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">🍽️ أورا </div>
+        <p>نقدم لكم أشهى الأطباق الشرقية والغربية بأجود المكونات وأيدي طهاة محترفين.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html">القائمة</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="gallery.html">معرض الصور</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#">توصيل للمنازل</a></li>
+          <li><a href="#">حجز طاولات</a></li>
+          <li><a href="#">طلبات المناسبات</a></li>
+          <li><a href="#">تغليف خاص</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>تواصل معنا</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-location-dot"></i>بابل - علامة بابيلون</li>
+          <li><i class="fas fa-phone"></i> 07863370728</li>
+          <li><i class="fas fa-envelope"></i>prg.mohamed.dev@gmail.com</li>
+          <li><i class="fas fa-clock"></i>  hours a day /days a week 24/7 </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p> جميع حقوق النشر محفوظة باسم أورا </p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> سلة الطلبات</h3>
+      <button class="cart-close" id="cart-close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-basket"></i>
+        <p>سلة الطلبات فارغة</p>
+        <span>أضف أطباقك المفضلة</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>المجموع</span>
+        <strong id="cart-total">0 د.ع</strong>
+      </div>
+      <button class="btn-primary btn-block" id="checkout-btn">
+        <i class="fas fa-check"></i> إتمام الطلب
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="معرض صور مطعم أورا — أطباقنا، أجواؤنا، ولحظات لا تُنسى." />
+  <meta name="theme-color" content="#7B1E1E" />
+  <title>معرض الصور | أورا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aura-pages.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🍽️</span>
+        <span class="logo-text">أورا</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html">القائمة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="gallery.html" class="active">معرض الصور</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-cart" id="cart-btn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-label">صورنا</span>
+      <h1 class="page-hero-title">معرض الصور</h1>
+      <p class="page-hero-subtitle">لقطات من أطباقنا، أجوائنا، ولحظات لا تُنسى</p>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">الكل</button>
+        <button class="gallery-filter-btn" data-filter="dishes">🍕 أطباق</button>
+        <button class="gallery-filter-btn" data-filter="grill">🍖 مشاوي</button>
+        <button class="gallery-filter-btn" data-filter="dessert">🍰 حلويات</button>
+        <button class="gallery-filter-btn" data-filter="ambiance">🏛️ أجواء</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+
+        <div class="gallery-item" data-category="dishes">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=600&fit=crop" alt="بيتزا مارغريتا" />
+          <div class="gallery-overlay">
+            <h4>بيتزا مارغريتا</h4>
+            <span>🍕 أطباق</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="dishes">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=600&fit=crop" alt="برغر لحم" />
+          <div class="gallery-overlay">
+            <h4>برغر لحم مشوي</h4>
+            <span>🍔 أطباق</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="grill">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop" alt="مشاوي مشكلة" />
+          <div class="gallery-overlay">
+            <h4>مشاوي مشكلة</h4>
+            <span>🍖 مشاوي</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="grill">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&h=600&fit=crop" alt="كباب عراقي" />
+          <div class="gallery-overlay">
+            <h4>كباب عراقي</h4>
+            <span>🍖 مشاوي</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="dishes">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=600&fit=crop" alt="سلطة سيزر" />
+          <div class="gallery-overlay">
+            <h4>سلطة سيزر</h4>
+            <span>🥗 أطباق</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=600&fit=crop" alt="تشيز كيك" />
+          <div class="gallery-overlay">
+            <h4>تشيز كيك</h4>
+            <span>🍰 حلويات</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=600&fit=crop" alt="كنافة" />
+          <div class="gallery-overlay">
+            <h4>كنافة بالجبن</h4>
+            <span>🍰 حلويات</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambiance">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=600&fit=crop" alt="أجواء المطعم" />
+          <div class="gallery-overlay">
+            <h4>أجواء المطعم</h4>
+            <span>🏛️ أجواء</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambiance">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=600&fit=crop" alt="طاولات المطعم" />
+          <div class="gallery-overlay">
+            <h4>طاولات فاخرة</h4>
+            <span>🏛️ أجواء</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="dishes">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=600&fit=crop" alt="بيتزا" />
+          <div class="gallery-overlay">
+            <h4>بيتزا مشكلة</h4>
+            <span>🍕 أطباق</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="grill">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&h=600&fit=crop" alt="ستيك" />
+          <div class="gallery-overlay">
+            <h4>ستيك لحم</h4>
+            <span>🍖 مشاوي</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambiance">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=600&fit=crop" alt="ديكور المطعم" />
+          <div class="gallery-overlay">
+            <h4>ديكور أنيق</h4>
+            <span>🏛️ أجواء</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">
+      <i class="fas fa-xmark"></i>
+    </button>
+    <img src="" alt="صورة مكبرة" id="lightbox-img" />
+  </div>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>أعجبتك الأطباق؟</h2>
+      <p>اطلب الآن واستمتع بالمذاق الأصلي في بيتك</p>
+      <a href="menu.html" class="btn-accent">
+        <i class="fas fa-utensils"></i>
+        تصفح القائمة
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">🍽️ أورا</div>
+        <p>نقدم لكم أشهى الأطباق الشرقية والغربية بأجود المكونات وأيدي طهاة محترفين.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html">القائمة</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="gallery.html">معرض الصور</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#">توصيل للمنازل</a></li>
+          <li><a href="#">حجز طاولات</a></li>
+          <li><a href="#">طلبات المناسبات</a></li>
+          <li><a href="#">تغليف خاص</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>تواصل معنا</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fas fa-location-dot"></i>بابل - علامة بابيلون</li>
+          <li><i class="fas fa-phone"></i> 07863370728</li>
+          <li><i class="fas fa-envelope"></i>prg.mohamed.dev@gmail.com</li>
+          <li><i class="fas fa-clock"></i> 24/7</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع حقوق النشر محفوظة باسم أورا</p>
+    </div>
+  </footer>
+
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> سلة الطلبات</h3>
+      <button class="cart-close" id="cart-close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-basket"></i>
+        <p>سلة الطلبات فارغة</p>
+        <span>أضف أطباقك المفضلة</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>المجموع</span>
+        <strong id="cart-total">0 د.ع</strong>
+      </div>
+      <button class="btn-primary btn-block" id="checkout-btn">
+        <i class="fas fa-check"></i> إتمام الطلب
+      </button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+
+  <script>
+    // فلترة الصور
+    const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        galleryItems.forEach(function (item) {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    galleryItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        const img = item.querySelector('img');
+        if (img && lightbox && lightboxImg) {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        }
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', function () {
+        lightbox.classList.remove('active');
+      });
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+          lightbox.classList.remove('active');
+        }
+      });
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
