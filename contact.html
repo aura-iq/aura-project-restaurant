@@ -95,6 +95,52 @@
           </form>
         </div>
 
+        <div class="contact-info-box">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+            <div> 
+              <h3>عنوان المطعم</h3>
+              <p>بابل - علامة بابيلون</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h3>رقم الهاتف</h3>
+              <a href="tel:07863370728">07863370728</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h3>البريد الإلكتروني</h3>
+              <a href="mailto:prg.mohamed.dev@gmail.com">prg.mohamed.dev@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h3>أوقات العمل</h3>
+              <p>على مدار الساعة، طوال أيام الأسبوع</p>
+            </div>
+          </div>
+
+          <div class="quick-contact">
+            <a href="tel:07863370728" class="quick-btn phone">
+              <i class="fas fa-phone"></i> اتصل بنا
+            </a>
+            <a href="https://wa.me/9647863370728" class="quick-btn whatsapp" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="container">
       <h2>عندك مناسبة خاصة؟</h2>
@@ -192,7 +238,7 @@
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
 
-        if (!name  !email  !message) {
+        if (!name || !email || !message) {
           alert('يرجى ملء الحقول المطلوبة');
           return;
         }

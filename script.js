@@ -117,7 +117,25 @@ document.querySelectorAll('.dish-add').forEach(function (btn) {
   });
 });
 
-// 4. Delivery Search (تجريبي)
+// 4. Menu Filters
+const menuFilterButtons = document.querySelectorAll('.filter-btn');
+const menuDishes = document.querySelectorAll('.menu-grid .dish-card');
+
+menuFilterButtons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    menuFilterButtons.forEach(function (filterBtn) {
+      filterBtn.classList.remove('active');
+    });
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+    menuDishes.forEach(function (dish) {
+      dish.classList.toggle('hidden', filter !== 'all' && dish.dataset.category !== filter);
+    });
+  });
+});
+
+// 5. Delivery Search (تجريبي)
 const searchBtn = document.getElementById('search-btn');
 const deliveryInput = document.getElementById('delivery-input');
 
@@ -139,7 +157,7 @@ if (searchBtn && deliveryInput) {
   });
 }
 
-// 5. Checkout (تجريبي)
+// 6. Checkout (تجريبي)
 const checkoutBtn = document.getElementById('checkout-btn');
 if (checkoutBtn) {
   checkoutBtn.addEventListener('click', function () {
